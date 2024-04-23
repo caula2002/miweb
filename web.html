@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Mercado PocoLibre - Notebook Dell Inspiron 3505</title>
+    <link rel="stylesheet" href="web.css">
+</head>
+<body>
+<div id="pantalla">
+    <div id="buscador" class="box">
+        <h1>JOROJO</h1>
+        <form action="/buscador">
+            <label>
+                Buscar artículo
+                <input type="text">
+                <input type="submit" value="Buscar">
+            </label>
+            <p id="oferta"></p>
+        </form>
+    </div>
+
+    <div id="imagen" class="box">
+        <img
+                id="imagen-notebook"
+             alt="imagen de notebook" height="300">
+    </div>
+
+    <div id="info-producto" class="box">
+        <h1 id="titulo"></h1>
+
+        <div>
+            <p id="nombreProducto"></p>
+            <ul id="caracteristicas"></ul>
+        </div>
+
+        <a id="link">Sitio Web Fabricante</a>
+
+        <p>Precio: $100.000,90</p>
+    </div>
+
+    <div id="puntaje" class="box">
+        <p>Excelente producto. Puntaje: 5/5</p>
+        <p>Bastante bueno. Puntaje: 4/5</p>
+    </div>
+
+    <div id="ingreso-puntaje" class="box">
+        <form action="/puntaje">
+            <label>Puntaje</label>
+            <label>
+                <input type="radio" name="puntaje-ingresado"> 1
+            </label>
+            <label>
+                <input type="radio" name="puntaje-ingresado"> 2
+            </label>
+            <label>
+                <input type="radio" name="puntaje-ingresado"> 3
+            </label>
+            <label>
+                <input type="radio" name="puntaje-ingresado"> 4
+            </label>
+            <label>
+                <input type="radio" name="puntaje-ingresado"> 5
+            </label>
+
+            <input type="submit" value="Dar puntaje">
+        </form>
+    </div>
+</div>
+<script src="web.js"></script>
+</body>
+</html>
+
