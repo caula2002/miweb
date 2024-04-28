@@ -11,6 +11,13 @@
     --color-fondo: rgb(255, 255, 255);
     --espaciado: 20px;
 }
+body{
+    background-image:url("https://wallpaperaccess.com/full/4944329.jpg");
+    font-family: 'Arial', sans-serif; /* Usa una fuente legible */
+    color: #fffdfd; /* Color de texto oscuro para mejor legibilidad */
+    margin: 0;
+    padding: 0;
+}
 
 .box {
     border-style: solid;
@@ -19,10 +26,12 @@
     margin: var(--espaciado);
     padding: var(--espaciado);
     background-color: var(--color-fondo);
+
 }
 
 #buscador {
     grid-area: buscador;
+    background-color: #1b0679;
 }
 
 #imagen {
@@ -35,20 +44,30 @@
 
 #info-producto {
     grid-area: descripcion;
+    background-color: #3208ee;
 }
 
 #puntaje {
     grid-area: puntaje;
+    background-color: #3208ee;
 }
 
 #ingreso-puntaje {
     grid-area: ingreso-puntaje;
+    background-color: #3208ee;
 }
 a, button {
     transition: background-color 0.3s ease, color 0.3s ease;
+    font-family: 'Times New Roman', Times, serif; /* Usa una fuente legible */
+    color: #f707e7; /* Color de texto oscuro para mejor legibilidad */
+    margin: 0;
+    padding: 0;
+
 }
 
 a:hover, button:hover {
     background-color: #0ef143; /* Cambia según tu esquema de color */
     color: #f00b0b;
 }
+
+

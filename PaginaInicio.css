@@ -1,0 +1,66 @@
+
+#productos{
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-areas: 'inicio inicio'
+                            'producto1 producto2'
+                            'producto3 producto4';
+}
+.contenedor1{
+    background: #024d09; /* Color de fondo del encabezado */
+    color: white;
+    padding: 20px 40px;
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+
+    font-family: 'Arial', sans-serif; /* Usa una fuente legible */
+    color: #fffdfd; /* Color de texto oscuro para mejor legibilidad */
+    margin: 0;
+    padding: 0;
+}
+a, button {
+    font-family: 'Arial', sans-serif; /* Usa una fuente legible */
+    color: #fffdfd; /* Color de texto oscuro para mejor legibilidad */
+    margin: 0;
+    padding: 0;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+a:hover, button:hover {
+   color: #f00b0b;
+}
+body {
+    background-image: url('https://img.freepik.com/vector-gratis/patron-juguetes_1284-737.jpg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-shadow: 2px 2px 4px #000; /* Sombra de texto para mejorar la legibilidad */
+}
+.contenedor {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40vh;
+    background-color: #02a12f;
+}
+#inicio{
+    grid-area: inicio;
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+}
+#producto1{
+    grid-area: producto1;
+}
+#producto2{
+    grid-area: producto2;
+}
+#producto3{
+    grid-area: producto3;
+}
+#producto4{
+    grid-area: producto4;
+}

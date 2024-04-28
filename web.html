@@ -8,14 +8,13 @@
 <body>
 <div id="pantalla">
     <div id="buscador" class="box">
-        <h1>JOROJO</h1>
+        <h1 id="titulo"></h1>
         <form action="/buscador">
             <label>
                 Buscar artículo
                 <input type="text">
                 <input type="submit" value="Buscar">
             </label>
-            <p id="oferta"></p>
         </form>
     </div>
 
@@ -26,16 +25,18 @@
     </div>
 
     <div id="info-producto" class="box">
-        <h1 id="titulo"></h1>
+        <h2 id="titulo2"></h2>
 
         <div>
             <p id="nombreProducto"></p>
             <ul id="caracteristicas"></ul>
         </div>
 
-        <a id="link">Sitio Web Fabricante</a>
-
-        <p>Precio: $100.000,90</p>
+        <a id="link" target="_blank">pagina del fabricante</a>
+        <div>
+            
+            <ul id="precio"></ul>
+        </div>
     </div>
 
     <div id="puntaje" class="box">
